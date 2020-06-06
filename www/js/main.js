@@ -26,7 +26,7 @@ function launchViewer(urn) {
   Autodesk.Viewing.Initializer(options, () => {
     Autodesk.Viewing.Private.InitParametersSetting.alpha = true;
 
-    viewer = new Autodesk.Viewing.Viewer3D(document.getElementById('forgeViewer'), { extensions: [ 'Autodesk.DocumentBrowser'] });
+    viewer = new Autodesk.Viewing.Viewer3D(document.getElementById('forgeViewer'));
     viewer.start();
 
     viewer.impl.renderer().setClearAlpha(0);
@@ -39,14 +39,15 @@ function launchViewer(urn) {
 }
 
 function onDocumentLoadSuccess(doc) {
-  var viewables = doc.getRoot().getDefaultGeometry();
-  viewer.loadDocumentNode(doc, viewables, {
-    keepCurrentModels: true,
-    applyRefPoint: true,
-    globalOffset: { x: 0, y: 0, z: 0 }
-  }).then(i => {
-    // documented loaded, any action?
-  });
+    const viewables = doc.getRoot().getDefaultGeometry();
+    viewer.loadDocumentNode(doc, viewables, {
+        keepCurrentModels: true,
+        applyRefPoint: true,
+        globalOffset: { x: 0, y: 0, z: 0 }
+    }).then(i => {
+        // documented loaded, any action?
+        viewer.setGroundShadow(false);
+    });
 }
 
 function onDocumentLoadFailure(viewerErrorCode) {

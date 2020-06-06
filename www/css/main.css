@@ -25,6 +25,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     text-decoration: none;
     color: #222;
     padding: 10px;
@@ -38,8 +39,10 @@ body {
 }
 
 .btn.btn-ar {
-    margin-top: '3mm';
-    font-size: '10mm';
+    padding: 6mm;
+    border-radius: 4mm;
+    margin-top: 4mm;
+    font-size: 12mm;
 }
 
 .btn.apl::before {
