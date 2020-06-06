@@ -3,7 +3,7 @@ const modelUrn = 'dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6dGVzdF8yMDIwMDUxNy9kb3duLn
 
 function ready() {
     const viewerContainer = document.getElementById('forgeViewerContainer');
-    const heightDelta = 50;
+    const heightDelta = 100;
 
     function checkViewerRatio() {
         const landscape = window.innerHeight + heightDelta < window.innerWidth;

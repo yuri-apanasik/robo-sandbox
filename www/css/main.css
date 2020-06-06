@@ -37,6 +37,11 @@ body {
     background-color: #dcdcdc;
 }
 
+.btn.btn-ar {
+    margin-top: '3mm';
+    font-size: '10mm';
+}
+
 .btn.apl::before {
     content: '\F8FF';
     color: #424242;
