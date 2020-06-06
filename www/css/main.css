@@ -20,8 +20,8 @@ body {
     left: 0;
 }
 
-.adsk-viewing-viewer {
-    background: none !important;
+#forgeViewerContainer .adsk-viewing-viewer {
+    background: transparent;
 }
 
 .btn {

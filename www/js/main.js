@@ -40,7 +40,6 @@ function launchViewer(urn) {
 
 function onDocumentLoadSuccess(doc) {
     const viewables = doc.getRoot().getDefaultGeometry();
-    return;
     viewer.loadDocumentNode(doc, viewables, {
         keepCurrentModels: true,
         applyRefPoint: true,
