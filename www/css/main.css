@@ -1,10 +1,5 @@
 body {
     background-color: #497aa0;
-    background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
-    background-image: linear-gradient(rgba(255,255,255,.3) 2px, transparent 2px),
-                    linear-gradient(90deg, rgba(255,255,255,.3) 2px, transparent 2px),
-                    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
 }
 
 #forgeViewerContainer {
@@ -21,7 +16,12 @@ body {
 }
 
 #forgeViewerContainer .adsk-viewing-viewer {
-    background: transparent;
+    background-color: #497aa0;
+    background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
+    background-image: linear-gradient(rgba(255,255,255,.3) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(255,255,255,.3) 2px, transparent 2px),
+                    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
 }
 
 .btn {
