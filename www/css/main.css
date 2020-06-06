@@ -1,0 +1,43 @@
+body {
+    background-color: #497aa0;
+    background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
+    background-image: linear-gradient(rgba(255,255,255,.3) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(255,255,255,.3) 2px, transparent 2px),
+                    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+}
+
+#forgeViewerContainer {
+    width: 100%;
+    position: relative;
+}
+
+#forgeViewer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.adsk-viewing-viewer {
+    background: none !important;
+}
+
+.btn {
+    text-decoration: none;
+    color: #222;
+    padding: 10px;
+    border: 1px solid #424242;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: #dcdcdc;
+}
+
+.btn.apl::before {
+    content: '\F8FF';
+    color: #424242;
+}
